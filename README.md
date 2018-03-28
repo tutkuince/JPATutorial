@@ -20,9 +20,9 @@ Part-2 contains basic CRUD process to MySql db with <b>Hibernate</b> implementat
 <h2>Part - 3</h2>
 Part-3 contains relations between entities
 <ul>
-  <li> <b>@OneToOne</b> </li>
-  <li> <b>@OneToMany</b> </li>
-  <li> <b>@ManyToOne</b> </li>
-  <li> <b>@ManyToMany</b> </li>
+  <li> <b>@OneToOne</b> -> Employee to ParkingSpace </li>
+  <li> <b>@OneToMany</b> -> Employee to Phone  </li>
+  <li> <b>@ManyToOne</b> -> Employee to Department </li>
+  <li> <b>@ManyToMany</b> -> Employee to Project </li>
 </ul>
 <hr>
