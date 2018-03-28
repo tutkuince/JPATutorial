@@ -6,7 +6,11 @@
 
 	<persistence-unit name="EmployeePersistenceUnit"
 		transaction-type="RESOURCE_LOCAL">
-		<class>part01.model.Employee</class>
+		<class>part03.model.Employee</class>
+		<class>part03.model.Department</class>
+		<class>part03.model.ParkingSpace</class>
+		<class>part03.model.Project</class>
+		<class>part03.model.Phone</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.jdbc.Driver" />
