@@ -17,3 +17,12 @@ Part-2 contains basic CRUD process to MySql db with <b>Hibernate</b> implementat
   <li>EntityTransaction helps us to begin and commit transaction </li>
 </ul>
 <hr>
+<h2>Part - 3</h2>
+Part-3 contains relations between entities
+<ul>
+  <li> <b>@OneToOne</b> </li>
+  <li> <b>@OneToMany</b> </li>
+  <li> <b>@ManyToOne</b> </li>
+  <li> <b>@ManyToMany</b> </li>
+</ul>
+<hr>
