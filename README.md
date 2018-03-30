@@ -18,8 +18,8 @@ Part-2 contains basic CRUD process to MySql db with <b>Hibernate</b> implementat
 </ul>
 <hr>
 <h2>Part - 3</h2>
-Part-3 contains relations between entities. There are 2 types of relationships between entities, unidirectional and bidirectional
-In a <b>unidirectional relationship</b>, only one entity has a relationship field or property that refers to the other. 
+Part-3 contains relations between entities. There are 2 types of relationships between entities, unidirectional and bidirectional.
+In a <b>unidirectional relationship</b>, only one entity has a relationship field or property that refers to the other. <br/>
 In a <b>bidirectional relationship</b>, each entity has a relationship field or property that refers to the other entity. Through the relationship field or property, an entity class’s code can access its related object. If an entity has a related field, the entity is said to “know” about its related object.
 <ul>
   <li> <b>@OneToOne</b> -> Employee to ParkingSpace </li>
