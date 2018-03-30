@@ -55,5 +55,13 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 		employee.setSalary(employee.getSalary() + amountIncrease); // between begin() and commit() for updating 
 		transaction.commit();
 	}
+	
+	@Override
+	public void updateNickName(Employee employee, NickName nickName) {
+		EntityTransaction transaction = entityManager.getTransaction();
+		transaction.begin();
+		employee.setNickName(nickName);
+		transaction.commit();
+	}
 
 }
