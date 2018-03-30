@@ -16,6 +16,9 @@ public class Department {
 	@Column(nullable = false)
 	private String name;
 
+	@OneToMany(mappedBy="department") // unidirectional relation with employee
+	private List<Employee> employees;
+	
 	public Department() {
 		// TODO Auto-generated constructor stub
 	}
