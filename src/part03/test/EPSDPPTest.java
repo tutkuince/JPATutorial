@@ -83,6 +83,10 @@ public class EPSDPPTest {
 		phoneDAO.insertPhone(phn6);
 		phoneDAO.insertPhone(phn7);
 
+		NickName nm1 = new NickName("Northstar");
+		NickName nm2 = new NickName("Necroterror");
+		NickName nm3 = new NickName("Millaholms");
+
 		EmployeeDAO employeeDAO = new EmployeeDAOImpl(entityManager);
 
 		Employee emp1 = new Employee("Tutku", "Ince", 5000, EmployeeType.FULL_TIME);
@@ -92,6 +96,7 @@ public class EPSDPPTest {
 		emp1.setParkingSpace(ps1);
 		emp1.setProjects(Arrays.asList(new Project[] { p1, p2, p5, p6 }));
 		emp1.setPhones(Arrays.asList(new Phone[] { phn1, phn2, phn3 }));
+		emp1.setNickName(nm1);
 
 		Employee emp2 = new Employee("Utku", "Ince", 1000, EmployeeType.PART_TIME);
 		emp2.setStartDate(LocalDate.now().minusMonths(3));
@@ -100,6 +105,7 @@ public class EPSDPPTest {
 		emp2.setParkingSpace(ps2);
 		emp2.setProjects(Arrays.asList(new Project[] { p1, p3, p4 }));
 		emp2.setPhones(Arrays.asList(new Phone[] { phn3, phn4, phn5 }));
+		emp2.setNickName(nm2);
 
 		Employee emp3 = new Employee("Uğur", "Batikan", 100, EmployeeType.PROJECT_BASE);
 		emp3.setStartDate(LocalDate.now().minusWeeks(3));
@@ -108,6 +114,7 @@ public class EPSDPPTest {
 		emp3.setParkingSpace(ps3);
 		emp3.setProjects(Arrays.asList(new Project[] { p4, p5, p6 }));
 		emp3.setPhones(Arrays.asList(new Phone[] { phn6, phn7 }));
+		emp3.setNickName(nm3);
 
 		employeeDAO.insertEmployee(emp1);
 		employeeDAO.insertEmployee(emp2);
