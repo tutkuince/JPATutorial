@@ -13,4 +13,6 @@ public interface EmployeeDAO {
 	public void deleteEmployeeById(int id);
 	
 	public void increaseSalary(int id, int amountIncrease);
+	
+	public void updateNickName(Employee employee, NickName nickName);
 }
